@@ -124,23 +124,9 @@ img{display:block;max-width:100%}
   position:relative;overflow:hidden;
   background:var(--cr2);
 }
-.hero-img-fill{
-  width:100%;height:100%;object-fit:cover;
-  display:flex;align-items:center;justify-content:center;
-}
-.hero-art{width:100%;height:100%;position:relative}
-.hero-fabric-bg{
-  position:absolute;inset:0;
-  background:
-    repeating-linear-gradient(135deg,transparent,transparent 28px,rgba(41,131,132,.04) 28px,rgba(41,131,132,.04) 29px),
-    repeating-linear-gradient(45deg,transparent,transparent 28px,rgba(138,158,32,.04) 28px,rgba(138,158,32,.04) 29px),
-    var(--cr2);
-}
-.hero-center-piece{
-  position:absolute;top:50%;left:50%;
-  transform:translate(-50%,-52%);
-  width:72%;
-}
+
+.hero-right img{width: 100%;height: 100%;object-fit: cover;object-position: top}
+
 .hero-label-card{
   position:absolute;bottom:48px;left:32px;
   background:#fff;border:1px solid var(--cr3);
