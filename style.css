@@ -26,7 +26,7 @@
 html{scroll-behavior:smooth}
 body{background:var(--cr);font-family:var(--ss);color:var(--dk);overflow-x:hidden}
 a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%}
+img{display:block;width: 100%;height: 100%;object-fit: cover;object-position: top;}
 
 /* ── ANNOUNCEMENT BAR ── */
 .ann-bar{
@@ -170,7 +170,8 @@ img{display:block;max-width:100%}
   position:relative;overflow:hidden;aspect-ratio:3/4;cursor:pointer;
   background:var(--cr2);
 }
-.cat-tile:first-child{aspect-ratio:2/3;grid-row:span 2}
+.cat-tile:first-child{aspect-ratio:2/5;grid-row:span 2}
+.cat-tile:nth-child(3){aspect-ratio:2/4.5;grid-row:span 2}
 .cat-art{width:100%;height:100%;transition:transform .6s var(--ease-out)}
 .cat-tile:hover .cat-art{transform:scale(1.04)}
 .cat-overlay{
@@ -496,6 +497,7 @@ img{display:block;max-width:100%}
   .trust-section{padding:64px 32px}
   .cat-grid{grid-template-columns:1fr 1fr}
   .cat-tile:first-child{grid-row:span 1;aspect-ratio:3/4}
+  .cat-tile:nth-child(3){aspect-ratio: 3/4;grid-row:span 1}
   .nav{padding:0 24px}
   .nav-links{display:none}
   .hamburger{display:flex}
