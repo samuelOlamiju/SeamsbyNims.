@@ -124,9 +124,7 @@ img{display:block;max-width:100%}
   position:relative;overflow:hidden;
   background:var(--cr2);
 }
-
-.hero-right img{width: 100%;height: 100%;object-fit: cover;object-position: top}
-
+.hero-right img{width: 100%;height: 100%;object-fit: cover;object-position: top;}
 .hero-label-card{
   position:absolute;bottom:48px;left:32px;
   background:#fff;border:1px solid var(--cr3);
@@ -143,12 +141,11 @@ img{display:block;max-width:100%}
   background:var(--dk);color:#fff;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   font-size:8px;letter-spacing:1.5px;text-transform:uppercase;text-align:center;line-height:1.5;
-  outline: 2px var(--gn) dotted;
+  outline: .8px var(--gn) dashed;
   animation:spin-slow 18s linear infinite;
 }
-@keyframes spin-slow{to{transform:rotate(360deg)}}
+@keyframes spin-slow{to{transform:rotate(720deg)}}
 .hero-badge-inner{animation:spin-slow 18s linear infinite reverse;display:flex;flex-direction:column;align-items:center}
-.hero-deco-line{position:absolute;width:1px;height:60%;background:linear-gradient(to bottom,transparent,var(--cr3),transparent);right:0;top:20%}
 
 /* ── MARQUEE ── */
 .marquee-wrap{background:var(--dk);padding:14px 0;overflow:hidden;white-space:nowrap}
@@ -160,7 +157,7 @@ img{display:block;max-width:100%}
   font-size:9px;letter-spacing:4px;color:rgba(250,247,242,.55);
   text-transform:uppercase;padding:0 32px;
 }
-.marquee-item .dot{color:var(--tl-light);font-size:14px;opacity:.6}
+.marquee-inner .dot{color:var(--tl-light);font-size:14px;opacity:.6}
 
 /* ── CATEGORY SECTION ── */
 .section-pad{padding:96px 80px}
