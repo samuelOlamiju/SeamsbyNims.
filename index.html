@@ -643,11 +643,11 @@
   <h2 class="reveal reveal-delay-1" style="font-family:var(--sf);font-size:clamp(36px,5vw,64px);color:var(--dk);font-weight:300;font-style:italic;line-height:1.05;margin-bottom:20px">Ready to Wear<br><em style="color:var(--tl)">Your Story?</em></h2>
   <p class="reveal reveal-delay-2" style="font-size:14px;color:var(--dk3);max-width:480px;margin:0 auto 40px;line-height:1.85">June 2026 slots are filling fast. Secure your consultation today — in studio or virtually — and let's create something unforgettable together.</p>
   <div class="reveal reveal-delay-3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-    <a href="https://wa.me/2348000000000?text=Hello%2C%20I%27d%20like%20to%20book%20a%20fitting" class="btn-primary" target="_blank">
+    <a href="https://wa.me/+2349056196177?text=Hello%2C%20I%27d%20like%20to%20book%20a%20fitting" class="btn-primary" target="_blank">
       Book via WhatsApp
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <a href="mailto:hello@seamsbynims.com" class="btn-outline">Send an Email</a>
+    <a href="mailto:lawalnaimot0903@gmail.com" class="btn-outline">Send an Email</a>
   </div>
   <!-- Urgency note -->
   <div class="reveal reveal-delay-4" style="margin-top:36px;display:inline-flex;align-items:center;gap:10px;background:rgba(168,112,48,.08);border:1px solid rgba(168,112,48,.2);padding:12px 22px;border-radius:2px">
@@ -698,8 +698,8 @@
     <div>
       <h5 class="footer-col-title">Contact</h5>
       <ul class="footer-links">
-        <li><a href="tel:+2348000000000">+234 800 000 0000</a></li>
-        <li><a href="mailto:hello@seamsbynims.com">hello@seamsbynims.com</a></li>
+        <li><a href="tel:+2349056196177">+2349056196177</a></li>
+        <li><a href="mailto:lawalnaimot0903@gmail.com">lawalnaimot0903@gmail.com</a></li>
         <li><a href="#">Ibadan Studio</a></li>
         <li style="margin-top:20px">
           <div style="font-size:10px;color:var(--dk4);line-height:1.8">
@@ -719,70 +719,7 @@
   </div>
 </footer>
 
-<script>
-// Nav scroll shadow
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 20);
-});
-
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-reveals.forEach(el => io.observe(el));
-
-// Process circle - highlight current step on hover
-const steps = document.querySelectorAll('.process-step');
-const innerNum = document.querySelector('.process-inner-num');
-const innerLabel = document.querySelector('.process-inner-label');
-steps.forEach((step, i) => {
-  step.addEventListener('mouseenter', () => {
-    innerNum.textContent = '0' + (i + 1);
-    innerLabel.textContent = ['Consult', 'Design', 'Wear'][i];
-  });
-  step.addEventListener('mouseleave', () => {
-    innerNum.textContent = '3';
-    innerLabel.textContent = 'Easy Steps';
-  });
-});
-
-// Animate hero headline on load
-document.querySelectorAll('.hero .reveal').forEach((el, i) => {
-  setTimeout(() => el.classList.add('visible'), 150 + i * 120);
-});
-
-// Newsletter form
-const nlInput = document.querySelector('.nl-input');
-const nlBtn = document.querySelector('.nl-btn');
-if (nlBtn) {
-  nlBtn.addEventListener('click', () => {
-    if (nlInput && nlInput.value.includes('@')) {
-      nlBtn.textContent = '✓ Subscribed!';
-      nlBtn.style.background = 'var(--gn)';
-      setTimeout(() => { nlBtn.textContent = 'Subscribe'; nlBtn.style.background = ''; }, 3000);
-    } else if (nlInput) {
-      nlInput.style.border = '1px solid rgba(168,112,48,.6)';
-      setTimeout(() => nlInput.style.border = '', 2000);
-    }
-  });
-}
-
-// Wishlist toggle
-document.querySelectorAll('.prod-wishlist').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    btn.style.background = btn.style.background === 'var(--tl)' ? '#fff' : 'var(--tl)';
-    btn.querySelector('svg path').style.fill = btn.style.background === 'var(--tl)' ? '#fff' : 'none';
-    btn.querySelector('svg path').style.stroke = btn.style.background === 'var(--tl)' ? '#fff' : '#0A1818';
-  });
-});
+<script src="script.js" defer>
 </script>
 </body>
 </html>
