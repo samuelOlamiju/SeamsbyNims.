@@ -77,7 +77,7 @@ img{display:block;max-width:100%}
   overflow:hidden;
 }
 .hero-left{
-  display:flex;flex-direction:column;justify-content:center;
+  display:inline-flex;flex-direction:column;justify-content:center;
   padding:80px 60px 80px 80px;
   position:relative;z-index:2;
 }
@@ -93,7 +93,7 @@ img{display:block;max-width:100%}
   line-height:.88;font-weight:300;color:var(--dk);
   margin-bottom:28px;
 }
-.hero-headline em{font-style:italic;color:var(--tl)}
+.hero-headline .tl{color:var(--tl)}
 .hero-headline .gn{color:var(--gn)}
 .hero-sub{font-size:13px;color:var(--dk3);line-height:1.9;letter-spacing:.2px;max-width:340px;margin-bottom:44px}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
