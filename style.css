@@ -43,7 +43,7 @@ img{display:block;max-width:100%}
   background:rgba(250,247,242,.92);
   backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--cr3);
+  border-bottom:100px solid var(--cr2);
   padding:0 36px;
   display:flex;align-items:center;justify-content:space-between;
   height:64px;
@@ -63,6 +63,10 @@ img{display:block;max-width:100%}
 .nav-icon:hover{opacity:1}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
 .hamburger span{display:block;width:22px;height:1.5px;background:var(--dk)}
+
+/* NAV-CART */
+.cart{position: relative;} 
+.cart-count{position:absolute;top:-5px;right:-7px;background:var(--tl);color:#fff;font-size:8px;width:15px;height:15px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700}
 
 /* ── HERO ── */
 .hero{
